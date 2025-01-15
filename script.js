@@ -8,6 +8,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+window.addEventListener('load', () => {
+  const heroSection = document.querySelector('.hero');
+  if (heroSection) {
+    heroSection.classList.add('slide-up');
+  }
+});
+
 // Contact Form Validation
 document.querySelector('form').addEventListener('submit', function (e) {
   e.preventDefault();
