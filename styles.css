@@ -35,6 +35,7 @@ header .logo {
 
 .nav-links {
   display: flex;
+  align-items:center;
   list-style: none;
 }
 
@@ -77,6 +78,7 @@ header .logo {
   transform: translateY(0); /* End at the original position */
 }
 
+
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -97,6 +99,8 @@ section {
   padding: 40px 20px;
 }
 
+/* About Section */
+
 .about-content {
   display: flex;
   align-items: center;
@@ -116,6 +120,20 @@ section {
   color: #007acc;
   font-weight: bold;
 }
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center items */
+  }
+
+  .profile-pic {
+    margin-bottom: 20px; /* Add space below the image */
+  }
+}
+
+/* End */
 
 .services-grid {
   display: grid;
