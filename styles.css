@@ -5,11 +5,13 @@ body, h1, h2, h3, p, ul, li, a, input, textarea, button {
   box-sizing: border-box;
 }
 
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #f9f9f9;
+  width:100%;
 }
 
 header {
@@ -22,6 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  max-width: 100000px;
 }
 
 header .logo {
@@ -35,7 +38,7 @@ header .logo {
 
 .nav-links {
   display: flex;
-  align-items:center;
+  justify-content:center;
   list-style: none;
 }
 
@@ -95,19 +98,21 @@ header .logo {
   padding: 20px;
 }
 
+.container a {
+    text-decoration:none;
+}
+
 section {
   padding: 40px 20px;
 }
 
 /* About Section */
 
-
 .abt {
     transform: translateY(50px);
   opacity: 0;
   transition: all 0.6s ease-in-out;
 }
-
 .about-content {
   display: flex;
   align-items: center;
@@ -201,6 +206,14 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 1rem;
   font-weight: bold;
+}
+
+#contact {
+    background: #2d3559;
+}
+
+#contact p, #contact h2, #contact p a {
+    color:white;
 }
 
 form input, form textarea, form button, .CTA_calender{
