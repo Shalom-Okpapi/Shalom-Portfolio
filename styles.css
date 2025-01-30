@@ -108,6 +108,10 @@ section {
 
 /* About Section */
 
+#about {
+  background:#cccccc;
+}
+
 .abt {
     transform: translateY(50px);
   opacity: 0;
